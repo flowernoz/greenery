@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav>
+            <div class="left">
+                <p>Groceries</p>
+            </div>
+
+            <div class="center">
+                <a href="./index.htm">Home</a>
+                <a href="./index-menu.htm">Menu</a>
+                <a href="">About Us</a>
+                <a href="">Contact</a>
+            </div>
+
+            <div class="right">
+                <a href=""><svg width="32" height="29" viewBox="0 0 32 29" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.8397 0.333432C20.576 -0.218851 21.6207 -0.0696181 22.173 0.666765L26.673 6.66677H26.6783C29.7427 6.66677 32.0862 9.39826 31.6202 12.4271L29.8253 24.0938C29.45 26.5329 27.3513 28.3334 24.8833 28.3334H6.79595C4.3281 28.3334 2.22935 26.5329 1.8541 24.0938L0.0592144 12.4271C-0.406752 9.39825 1.93665 6.66677 5.00108 6.66677H5.00635L9.50635 0.666765C10.0586 -0.0696181 11.1033 -0.218851 11.8397 0.333432C12.576 0.885715 12.7253 1.93038 12.173 2.66676L9.17301 6.66677H22.5063L19.5063 2.66676C18.954 1.93038 19.1033 0.885715 19.8397 0.333432ZM5.82026 10.0001C5.83236 10.0002 5.84446 10.0002 5.85655 10.0001H25.8228H25.8592H26.6783C27.6998 10.0001 28.4808 10.9106 28.3255 11.9203L26.5307 23.5869C26.4057 24.3999 25.706 25.0001 24.8833 25.0001H6.79595C5.97333 25.0001 5.27375 24.3999 5.14866 23.5869L3.3538 11.9203C3.19846 10.9106 3.9796 10.0001 5.00108 10.0001H5.82026Z"
+                            fill="#101010" />
+                    </svg>
+                </a>
+
+                <button>Sign Up</button>
+            </div>
+        </nav>
+
+        <div class="section">
+
+            <div class="sec-left">
+                <p>Your cart:</p>
+
+                <div class="carts two-carts">
+                    <div class="cart">
+                        <img src="./img/orange.png" alt="">
+                        <span>Kiwi, 1 pc</span>
+                        <b>$5</b>
+
+                        <div class="number-input">
+                            <button class="minus"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                            <a href="./index-cart.htm">Add</a>
+                        </div>
+
+                    </div>
+
+                    <div class="cart">
+                        <img src="./img/orange.png" alt="">
+                        <span>Mango, 1 pc</span>
+                        <b>$6</b>
+
+                        <div class="number-input">
+                            <button class="minus"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                            <input class="quantity" min="0" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                            <a href="./index-cart.htm">Add</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="left-bottom">
+
+                    <div class="bottom-left">
+
+                        <div class="grey">
+                            <p>Amount</p>
+                            <button>$45</button>
+                        </div>
+
+                        <div class="red">
+                            <p>Discount</p>
+                            <button>$6</button>
+                        </div>
+
+                    </div>
+
+                    <div class="bottom-right">
+                        <p>Total Sum</p>
+                        <button>$39</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sec-right">
+                <p>Your cart:</p>
+                <input placeholder=" First Name" type="text">
+                <input placeholder="Second Name" type="text">
+                <input placeholder="Address" type="text">
+                <input placeholder="Card Number" type="number">
+                <div class="inputs">
+                    <input id="date" placeholder="MM/YY" type="date">
+                    <label class="label1" for="date">MM/YY</label>
+                    <input placeholder="CCV" id="file-upload" type="file">
+                    <label class="label2" for="file-upload">CVV</label>
+                </div>
+                <button>Order</button>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

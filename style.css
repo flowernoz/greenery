@@ -1,0 +1,65 @@
+@import url(./general.css);
+
+.section1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 180px 240px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec1-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 635px;
+}
+
+.sec1-left p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    color: #101010;
+}
+
+.sec1-left span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #101010;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order {
+    width: 255px;
+    height: 85px;
+    background: #407536;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.download {
+    width: 334px;
+    height: 85px;
+    border: 2px solid #101010;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #101010;
+    cursor: pointer;
+}
